@@ -6,3 +6,8 @@ export function parseNumbers(input) {
   return _.compact(numbers);
 }
 
+// #TODO 5.2
+export function isValidOperation(operation) {
+  const validOps = ["add", "subtract", "multiply", "divide"];
+  return _.includes(validOps, operation);
+}
